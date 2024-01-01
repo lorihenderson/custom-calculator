@@ -8,7 +8,6 @@ class Calculator {
     clear() {
         this.currentOperand = ''
         this.previousOperand = ''
-        // this.operation = undefined
     }
 
     delete() {
@@ -65,19 +64,12 @@ class Calculator {
 }
 
 const numberButtons = document.querySelectorAll('[data-number]')
-// const numberButtons = document.getElementById('data-number')
 const operationButtons = document.querySelectorAll('[data-operation]')
-// const operationButtons = document.getElementById('data-operation')
 const equalsButton = document.querySelector('[data-equals]')
-// const equalsButton = document.getElementById('data-equals')
 const deleteButton = document.querySelector('[data-delete]')
-// const deleteButton = document.getElementById('data-delete')
 const allClearButton = document.querySelector('[data-all-clear]')
-// const allClearButton = document.getElementById('data-all-clear')
 const previousOperandTextElement = document.querySelector('[data-previous-operand]')
-// const previousOperandTextElement = document.getElementById('data-previous-operand')
 const currentOperandTextElement = document.querySelector('[data-current-operand]')
-// const currentOperandTextElementText = document.getElementById('data-current-operand')
 
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
 
